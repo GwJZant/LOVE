@@ -55,13 +55,13 @@ function love.keypressed(key)
   local x = player.tile_x
   local y = player.tile_y
   
-  if key == "left" then
+  if key == "left" or key == "a" then
     x = x - 1
-  elseif key == "right" then
+  elseif key == "right" or key == "d" then
     x = x + 1
-  elseif key == "up" then
+  elseif key == "up" or key == "w" then
     y = y - 1
-  elseif key == "down" then
+  elseif key == "down" or key == "s" then
     y = y + 1
   end
   
